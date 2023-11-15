@@ -6,7 +6,7 @@ def str_cal(s):
     for a in s:
         if a=='*' or a=='/':
             arr1.append(a)
-        else:
+        elif a=='+' or a=='-':
             arr2.append(a)
     
     return arr1+arr2
