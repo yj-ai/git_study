@@ -15,7 +15,7 @@ def sh(s):
             operate_list.append(i)
 
     return num_list, operate_list
-
+# ss
 
 # 예시
 s = "9 + 4 * 9"
