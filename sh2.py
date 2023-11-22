@@ -8,10 +8,10 @@ def sh2(count):
     english = []
 
     for i in range(1, count + 1):
-        a = int(random.randint(1, 101))
-        b = int(random.randint(1, 101))
-        c = int(random.randint(1, 101))
-        d = int(random.randint(1, 101))
+        a = int(random.randint(0, 101))
+        b = int(random.randint(0, 101))
+        c = int(random.randint(0, 101))
+        d = int(random.randint(0, 101))
         kor.append(a)
         math.append(b)
         science.append(c)
