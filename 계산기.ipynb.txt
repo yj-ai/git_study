@@ -1,0 +1,22 @@
+def calculate(int_list, str_list):
+      for operator in prioritize_operations(str_list):
+        index = str_list.index(operator)
+        if operator in {'+', '-', '*', '/'}:
+            a = int_list[index]
+            b = int_list[index + 1]
+            if operator == '+':
+                result = a + b
+            elif operator == '-':
+                result = a - b
+            elif operator == '*':
+                result = a * b
+            elif operator == '/':
+                result = a / b
+            int_list[index] = result
+            str_list.pop(index)
+            int_list.pop(index + 1)
+
+    return int_list[0]
+
+result = calculate_values([9, 4, 9], ['+', '*'])
+print("Result:", result)
